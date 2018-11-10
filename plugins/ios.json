@@ -7,6 +7,12 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-crop": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "io.ionic.starter"
     },
@@ -20,6 +26,10 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-telerik-imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "your usage message",
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-whitelist": {

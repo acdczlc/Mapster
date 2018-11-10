@@ -19,6 +19,20 @@ import { MapProvider } from '../providers/map/map';
 import { LocationProvider } from '../providers/location/location';
 import { MessagesProvider } from '../providers/messages/messages';
 
+
+
+
+import { ImagePicker } from '@ionic-native/image-picker';
+import { Crop } from '@ionic-native/crop';
+import { Camera } from '@ionic-native/camera';
+
+import { AngularFireStorageModule } from 'angularfire2/storage';
+import { FirebaseService } from '../pages/service/firebase.service';
+
+
+import * as firebase from "firebase";
+firebase.initializeApp(FIREBASE_CONFIG);
+
 @NgModule({
   declarations: [
     MyApp,
@@ -44,7 +58,14 @@ import { MessagesProvider } from '../providers/messages/messages';
     NetworkProvider,
     MapProvider,
     LocationProvider,
-    MessagesProvider
+    MessagesProvider,
+    StatusBar,
+    SplashScreen,
+    ImagePicker,
+    Crop,
+    Camera,
+    FirebaseService,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
